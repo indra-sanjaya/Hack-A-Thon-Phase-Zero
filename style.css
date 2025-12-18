@@ -1,0 +1,325 @@
+html, body {
+  margin:0;
+  padding: 0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f4f4;
+  min-height: 100vh;
+}
+
+body {
+  background-image: url("https://cdna.artstation.com/p/assets/images/images/031/893/686/original/camille-unknown-snow-story-01.gif?1604917299");
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: relative;
+  background-image: url("https://www.volantedesign.us/cdn/shop/files/end_of_line_glitch_only.gif?v=1758642405&width=2400");
+  background-size:contain;
+  background-position: center;
+  background-color: transparent;
+  padding: 160px 50px;
+  color:white;
+  text-align:center;
+  font-family:"Bitcount Prop Single", sans-serif;
+  text-shadow:0 2px 8px rgba(255,255,255,0.7), 0 0 20px rgba(0,200,120,0.6);
+  border-bottom: 8px solid #28e98c;
+}
+
+.top-header {
+  color: white;
+}
+
+.navbar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 16px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgb(0, 8, 98);
+  transition: all 0.25s ease;
+}
+
+.navbar a:hover {
+  background: rgba(237, 255, 79, 0.85);
+  color: #111;
+  box-shadow: 0 0 20px rgba(40,233,140,0.7);
+  transform: translateY(-2px);
+}
+
+.container {
+  max-width:1100px;
+  margin:25px auto;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+}
+
+.gender,
+.types {
+  display: flex;
+  flex-direction: column;
+  font-family:"Bitcount Prop Single", sans-serif;
+  padding: 10px 5px;
+}
+
+select {
+  max-width: 1100px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: lightcyan;
+  font-size: 14px;
+  cursor:pointer;
+  box-shadow: 0 10px 10px rgba(14, 179, 171, 0.08);
+}
+
+#course {
+  font-family:"Bitcount Prop Single", sans-serif;
+  padding: 5px 5px;
+}
+
+#jenis {
+  font-family:"Bitcount Prop Single", sans-serif;
+  padding: 5px 5px;
+}
+
+#shopCart {
+  font-family: "Bitcount Prop Single", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 30px 0 15px;
+}
+
+#listKeranjang {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#listKeranjang li {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  font-size: 14px;
+}
+
+#listKeranjang li:hover {
+  transform: scale(1.02);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.hapus {
+  border: none;
+  font-size: 8px;
+  border-radius: 5px;
+}
+
+.hapus:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+#totalPrice {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: linear-gradient(90deg, rgb(8, 104, 8), #333);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 14px;
+  text-align: right;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+#checkOut {
+  margin-top: 10px;
+  padding: 5px 5px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  font-family:"Bitcount Prop Single", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  border-radius: 12px;
+  border: none;
+}
+
+#checkOut:hover {
+  background:lightgreen;
+  color:black;
+}
+
+#pay {
+  display: none;
+  align-content: center;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  max-width: 20%;
+}
+
+.category {
+  margin-top:40px
+}
+
+.category h2 {
+  font-size:24px;
+  margin-bottom:10px
+}
+
+#sectionTitle {
+  border-left: 10px solid #28a745;
+  padding: 10px 10px;
+  margin: 0 0 1em;
+  font-size: 1.4rem;
+  display:flex;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(40,167,69,.15));
+  border-radius: 8px;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+  gap:20px
+}
+
+.card {
+  background:radial-gradient(white, rgb(211, 255, 250));
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.25);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.5);
+}
+
+.card img {
+  width:100%;
+  height: 300px;
+  object-fit:cover
+}
+        
+.card .info {
+  padding:10px 12px
+}
+
+.card .title {
+  font-size:16px;
+  font-weight:600;
+  margin-bottom:6px;
+  color:#333
+}
+
+.price {
+  color:#008000;
+  font-weight:700;
+  margin-bottom:8px
+}
+
+.card button {
+  width:100%;
+  padding:8px;
+  color:#fff;
+  border:none;
+  border-radius:6px;
+  font-size:14px;
+  cursor:pointer
+}
+
+.card button,
+#checkOut {
+  background: linear-gradient(135deg, #0f9d58, #087f23);
+  transition: all .25s ease;
+}
+
+button:hover {
+  background:lightgreen;
+  color: black;
+}
+
+.card button:hover,
+#checkOut:hover {
+  box-shadow: 0 10px 25px rgba(15,157,88,.45);
+  transform: translateY(-2px);
+}
+
+h3 {
+  margin-top: 50px;
+  font-family: "Bitcount Prop Single", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  font-size: large;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.logo {
+  background: url("https://previews.123rf.com/images/gkrphoto/gkrphoto1504/gkrphoto150400037/39142879-money-background-from-different-currency.jpg");
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(100px,1fr));
+  gap:20px;
+  border-radius: 100px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px rgb(0, 0, 0);
+}
+
+.about {
+  max-width: 1100px;     
+  margin: 20px auto;  
+  padding: 20px 20px;
+  font-family: "Bitcount Prop Single", sans-serif;
+  font-size: medium;
+  background-color: rgba(0,0,0,0.85);
+  color: #fff;
+  text-align: justify;
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+}
+
+.sosmed {
+  display: flex;
+  gap: 8px;
+}
+
+.sosmed img {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.sosmed img:hover {
+  transform: scale(1.5);
+}
